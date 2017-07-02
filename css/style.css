@@ -1,0 +1,65 @@
+@-webkit-keyframes slideshow {
+	from { transform: rotateY(45deg) rotate3d(-1,0,0,0deg) translateY(-200px);}
+	to { transform: rotateY(-360deg) rotate3d(-1,0,0,360deg) translateY(-200px);}
+
+}
+
+@keyframes slideshow {
+	from { transform: rotateY(45deg) rotate3d(-1,0,0,0deg) translateY(-200px);}
+	to { transform: rotateY(45deg) rotate3d(-1,0,0,360deg) translateY(-200px);}
+}
+
+
+#Bilder {
+	-webkit-animation: slideshow 6s linear infinite;
+	animation: slideshow 6s linear infinite;
+	transform-style: preserve-3d;
+	-webkit-transform-style: preserve-3d;
+	transform: rotateY(45deg);
+}
+
+#Box {
+	perspective: 1200px;
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	top: calc(80% - 200px);
+	left: calc(50% - 150px);
+	margin: -150px 0 0 -100px;
+}
+
+img {
+	width:: 400px;
+	height: 400px;
+}
+
+#Alpha {
+	transform: rotateX(0deg) 
+	translateY(200px);
+}
+
+#Beta {
+	transform: rotateX(-72deg)
+	translateY(200px);
+}
+
+#Gamma {
+	transform: rotateX(-144deg)
+	translateY(200px);
+}
+
+#Delta {
+	transform: rotateX(-216deg)
+	translateY(200px);
+}
+
+#Epsilon {
+	transform: rotateX(-288deg)
+	translateY(200px);
+}
+
+.Pics {
+	position: absolute;
+	border: 1px solid gold;
+	border-radius: 40px;
+}
